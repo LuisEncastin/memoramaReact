@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+const baseUrl = 'https://pokeapi.co/api/v2/';
+// const Url = 'https://pokeapi.co/api/v2/';
+
+// const appNode = document.querySelector('#app')
+//     appNode.addEventListener ('click', (event) => {
+//         if(event.target.nodeName === 'H2') {
+//             window.alert('Lo estamos logrando');
+//         }
+//     });
+
+// window
+//     .fetch(`${baseUrl}pokemon/25`) 
+//     //Procesar la respuesta y convertirla en JSON
+//     .then(response => response.json())
+//     //JSON => Data => Renderizar info en el browser.
+//     .then(responseJson => {
+//         // debugger;
+//         console.log(responseJson)})
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    
+    window
+    .fetch(`${baseUrl}pokemon/25`) 
+
+    return (
+        <>
+            <h1>Memory Game</h1>
+        </>
+    );
 }
 
 export default App;
