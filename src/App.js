@@ -1,26 +1,10 @@
-const baseUrl = 'https://pokeapi.co/api/v2/';
-// const Url = 'https://pokeapi.co/api/v2/';
-
-// const appNode = document.querySelector('#app')
-//     appNode.addEventListener ('click', (event) => {
-//         if(event.target.nodeName === 'H2') {
-//             window.alert('Lo estamos logrando');
-//         }
-//     });
-
-// window
-//     .fetch(`${baseUrl}pokemon/25`) 
-//     //Procesar la respuesta y convertirla en JSON
-//     .then(response => response.json())
-//     //JSON => Data => Renderizar info en el browser.
-//     .then(responseJson => {
-//         // debugger;
-//         console.log(responseJson)})
+import useGetImages from './hooks/useGetImages'
 
 function App() {
     
-    window
-    .fetch(`${baseUrl}pokemon/25`) 
+    const images = useGetImages();
+
+    console.log({images});
 
     return (
         <>
