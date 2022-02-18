@@ -11,11 +11,19 @@ function App() {
         setGameOptions(options);
     }
 
+    const restartGame = () => {
+        setGameOptions(null);
+    };
+
     return (
         <>
-            <Background/>
+            <Background />
             <h1>Memory Game</h1>
-            {!gameOptions ? <Settings startGame={startGame}/> : <Board gameOptions={gameOptions}/>}
+            {!gameOptions ? (
+                <Settings startGame={startGame} />
+            ) : (
+                <Board gameOptions={gameOptions} restartGame={restartGame} />
+            )}
         </>
     );
 }

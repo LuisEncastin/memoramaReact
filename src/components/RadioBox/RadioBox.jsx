@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './RadioBox.module.css';
-import { propTypes } from 'google-map-react';
 
 const RadioBox = ({name, selectedItem, onChange}) => {
-    const isChecked = name === selectedItem
+    const isChecked = name === selectedItem;
 
     return(
         <div className={`${styles.radioBox}`}>

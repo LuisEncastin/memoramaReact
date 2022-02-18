@@ -20,10 +20,14 @@ const Counter = ({ cardsCount, onClick }) => {
     };
 
     return (
-        <div className='quantity'>
-            <button className='minus' onClick={onDecrement}> - </button>
-            <span className="quantity"> {cardsCount} </span>
-            <button className='plus'  onClick={onIncrement}> + </button>
+        <div className="quantity">
+            <button className="minus" onClick={onDecrement}>
+                -
+            </button>
+            <span className="quantity">{cardsCount}</span>
+            <button className="plus" onClick={onIncrement}>
+                +
+            </button>
         </div>
     );
 };
@@ -33,5 +37,4 @@ export default Counter;
 Counter.propTypes = {
     cardsCount: PropTypes.number.isRequired,
     onClick: PropTypes.func.isRequired,
-
-}
+};
