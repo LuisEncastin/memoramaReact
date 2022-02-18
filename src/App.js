@@ -15,7 +15,7 @@ function App() {
         <>
             <Background/>
             <h1>Memory Game</h1>
-            {!gameOptions ? <Settings startGame={startGame}/> : <Board/>}
+            {!gameOptions ? <Settings startGame={startGame}/> : <Board gameOptions={gameOptions}/>}
         </>
     );
 }
