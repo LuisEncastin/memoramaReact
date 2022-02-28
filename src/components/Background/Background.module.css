@@ -1,7 +1,7 @@
 /* Design taken from https://codepen.io/jspilka95/pen/vYXXWOE */
 .area {
-    background-color: #54acff;
-    background-image: linear-gradient(43deg, #54acff 0%, #c67aff 46%, #ff84b3 100%);
+    background-color: #1c71c0;
+    background-image: linear-gradient(43deg, #0b4b86 0%, #31b19b 46%, #07e0e0 100%);
 
     height: 100vh;
     width: 100vw;

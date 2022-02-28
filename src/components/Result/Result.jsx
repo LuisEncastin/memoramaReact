@@ -5,7 +5,7 @@ import styles from './Result.module.css';
 
 const Result = ({ restartGame }) => (
     <div className={`${styles.container} frosted`}>
-        <p>Awesome!</p>
+        <p>Awesome! You won.</p>
         <button className={`${styles.button} frosted`} onClick={restartGame}>
             Finish Game
         </button>
